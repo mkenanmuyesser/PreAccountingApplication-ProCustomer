@@ -1,0 +1,10 @@
+
+Demolarýn çalýþabilmesi için cihaz kurulumu yapýlmalýdýr. 
+Bu sayede gerekli ayarlar activex denetimlerimiz yüklenir.
+
+Cihaz kullanýlmasa bile, demolarý çalýþtýrabilmek için, bu kurulum gereklidir.
+
+
+Güncel Cihaz Kurulumunu, Dosyalar sayfamýzdan indirebilirsiniz
+
+http://www.sistemler.com/

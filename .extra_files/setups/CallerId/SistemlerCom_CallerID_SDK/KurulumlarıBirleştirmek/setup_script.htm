@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cidkur.iss</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.ini1-comment { color: #008000; font-style: italic; }
+.ini1-key { color: #0000FF; }
+.ini1-number { }
+.ini1-section { font-weight: bold; }
+.ini1-space { }
+.ini1-string { }
+.ini1-symbol { }
+.ini1-text { }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 10pt Courier New;"><span class="ini1-comment">; -- Components.iss --
+; Demonstrates a components-based installation.
+
+; SEE THE DOCUMENTATION FOR DETAILS ON CREATING .ISS SCRIPT FILES!
+
+</span><span class="ini1-section">[Setup]
+</span><span class="ini1-key">AppName</span><span class="ini1-symbol">=My Program
+</span><span class="ini1-key">AppVerName</span><span class="ini1-symbol">=My Program version 1.5
+</span><span class="ini1-key">DefaultDirName</span><span class="ini1-symbol">={pf}\My Program
+</span><span class="ini1-key">DefaultGroupName</span><span class="ini1-symbol">=My Program
+</span><span class="ini1-key">UninstallDisplayIcon</span><span class="ini1-symbol">={app}\MyProg.exe
+</span><span class="ini1-key">OutputDir</span><span class="ini1-symbol">=.\
+
+
+</span><span class="ini1-section">[Languages]
+</span><span class="ini1-comment">; Name: tr; MessagesFile: &quot;compiler:turkish.isl&quot;
+
+
+</span><span class="ini1-section">[Types]
+
+</span><span class="ini1-key">Name: &quot;custom&quot;; Description: &quot;Özel kurulum&quot;; Flags: iscustom
+Name: &quot;full&quot;; Description: &quot;Tam kurulum&quot; ;
+
+
+</span><span class="ini1-section">[Components]
+</span><span class="ini1-key">Name: &quot;Callerid&quot;; Description: &quot;Caller ID cihazı kurulumu &quot;; Types: full custom; Flags: fixed
+Name: &quot;Program1&quot;; Description: &quot;Program1Kurulumu&quot;; Types: full custom ;
+Name: &quot;Program2&quot;; Description: &quot;Program2Kurulumu&quot;; Types: full custom  ;
+Name: &quot;readme&quot;; Description: &quot;Readme File&quot;; Types: custom    ;
+
+</span><span class="ini1-section">[Files]
+</span><span class="ini1-key">Source: &quot;CIDSetup.exe&quot;; DestDir: &quot;{app}&quot; ;Components: Callerid; Permissions: admins-full; CopyMode: alwaysoverwrite; AfterInstall: kur0;
+Source: &quot;Program1Kur.exe&quot;; DestDir: &quot;{app}&quot; ;Components: Program1; Permissions: admins-full; CopyMode: alwaysoverwrite; AfterInstall: kur1;
+Source: &quot;Program2Kur.exe&quot;; DestDir: &quot;{app}&quot; ;Components: Program2; Permissions: admins-full; CopyMode: alwaysoverwrite; AfterInstall: kur2;
+Source: &quot;Readme.txt&quot;; DestDir: &quot;{app}&quot;; Components: readme; Flags: isreadme
+
+
+
+</span><span class="ini1-section">[code]
+</span><span class="ini1-key">procedure kur0();
+var
+</span><span class="ini1-space">  ResultCode:integer;
+</span><span class="ini1-key">begin
+</span><span class="ini1-space">    Exec(ExpandConstant('{app}\CIDSetup.exe'), '', '', SW_SHOW,   ewWaitUntilTerminated, ResultCode);
+</span><span class="ini1-key">//  Exec(ExpandConstant('{app}\CIDSetup.exe'), '/verysilent', '', SW_SHOW,   ewWaitUntilTerminated, ResultCode);
+// gİZLİ kurmak isterseniz /verysilent parameteresi kullanılır.
+</span><span class="ini1-space">    DeleteFile (ExpandConstant('{app}\CIDSetup.exe')) ;
+
+</span><span class="ini1-key">end;
+
+procedure kur1();
+var
+</span><span class="ini1-space">  ResultCode:integer;
+</span><span class="ini1-key">begin
+</span><span class="ini1-space">    Exec(ExpandConstant('{app}\Program1Kur.exe'), '', '', SW_SHOW,   ewWaitUntilTerminated, ResultCode);
+    //DeleteFile (ExpandConstant('{app}\Program1Kur.exe')) ;
+
+</span><span class="ini1-key">end;
+
+procedure kur2();
+var
+</span><span class="ini1-space">  ResultCode:integer;
+</span><span class="ini1-key">begin
+</span><span class="ini1-space">    Exec(ExpandConstant('{app}\Program2Kur.exe'), '', '', SW_SHOW,   ewWaitUntilTerminated, ResultCode);
+    //DeleteFile (ExpandConstant('{app}\Program2Kur.exe')) ;
+</span><span class="ini1-key">end;
+
+
+begin
+end.
+
+
+
+
+</span><span class="ini1-section">[Icons]
+
+
+</span></span>
+</code></pre>
+</body>
+</html>

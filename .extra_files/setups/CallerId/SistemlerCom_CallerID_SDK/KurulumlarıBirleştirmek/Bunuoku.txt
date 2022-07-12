@@ -1,0 +1,36 @@
+Caller ID cihazý kurulumu ile 
+kendi kurulum dosyalarýnýzý birleþtirme iþlemine  örnektir.
+INNO setup 5.2.2 ile hazýrlandý. Fakat Inno Setup kullanmanýz þart deðildir.
+
+Özetle,
+1- kendi kurulum iþlemlerinizi yapmadan önce bizim kurulumu çalýþtýrmalýsýnýz.
+GÝZLÝ kurmak isterseniz /verysilent parameteresi kullanýlýr.> CIDSetup.exe /verysilent
+Bu kurulum bitene kadar beklenir.
+
+2-Daha sonra programýnýzla ilgili diðer kurulum iþlemleri yapýlýr
+
+
+
+Inno Setup kullanýlacaksa aþaðýdaki gibi yapýlýr.
+
+
+klasör içinde güncel 
+CIDSetup.exe
+dosyasý ve diðer kurulum dosyalarý bulundurulur.  
+Cid .. setup ismi farklýysa  uygun þekilde deðiþtiriniz
+
+Program1Kur.exe
+Program2Kur.exe
+
+isteðe baðlý olarak kurulacak diðer programlarýýn "kurulum" dosyasýdýr.
+buradaki örnek kurulum dosyalarý winrar ile elde edildi.
+
+Ýsterseniz cihaz kurulumunu görünmeden  yaptýrabilirsiniz.
+cidkur.iss dosyasýný inceleyiniz
+
+INNO setup ücretsiz , kurulum hazýrlama programýdýr.
+
+
+
+
+

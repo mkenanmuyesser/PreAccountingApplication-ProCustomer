@@ -1,0 +1,7 @@
+
+Caller ID nesnemiz  buradaki gibi 
+dinamik olarak oluþturulabilir.
+
+
+Bu demonun baþarýyla çalýþabilmesi için,
+Cihaz kurulumu yapýlmýþ olmalýdýr.

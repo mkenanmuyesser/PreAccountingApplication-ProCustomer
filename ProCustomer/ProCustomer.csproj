@@ -1,0 +1,1256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC6E342A-4B0D-43A0-968D-7123AC0DD0E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProCustomer</RootNamespace>
+    <AssemblyName>ProCustomer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.BonusSkins.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Data.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.ExpressApp.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Win.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.ExpressApp.Win.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.Utils.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraBars.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraEditors.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraGrid.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DevExpress.XtraPrinting.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Crypto.cs" />
+    <Compile Include="Classes\DataLoad.cs" />
+    <Compile Include="Classes\GridLocalization.cs" />
+    <Compile Include="Classes\ModulData.cs" />
+    <Compile Include="Forms\Muayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Muayene.Designer.cs">
+      <DependentUpon>Muayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PhotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PhotoForm.Designer.cs">
+      <DependentUpon>PhotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Randevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Randevu.Designer.cs">
+      <DependentUpon>Randevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RandevuListeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RandevuListeForm.Designer.cs">
+      <DependentUpon>RandevuListeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RaporForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RaporForm.Designer.cs">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_10HayvanTurTanim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_10HayvanTurTanim.Designer.cs">
+      <DependentUpon>_10HayvanTurTanim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_1KasaTanimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_1KasaTanimForm.designer.cs">
+      <DependentUpon>_1KasaTanimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_2PersonelListeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_2PersonelListeForm.designer.cs">
+      <DependentUpon>_2PersonelListeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_3BolgeListeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_3BolgeListeForm.designer.cs">
+      <DependentUpon>_3BolgeListeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_4OdemeTipiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_4OdemeTipiForm.designer.cs">
+      <DependentUpon>_4OdemeTipiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_5SirketBilgiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_5SirketBilgiForm.designer.cs">
+      <DependentUpon>_5SirketBilgiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_6KullaniciTanimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_6KullaniciTanimForm.Designer.cs">
+      <DependentUpon>_6KullaniciTanimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_7ProgramAyarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_7ProgramAyarForm.Designer.cs">
+      <DependentUpon>_7ProgramAyarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_8ParaPuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_8ParaPuan.Designer.cs">
+      <DependentUpon>_8ParaPuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_9HayvanTanimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tanimlama\_9HayvanTanimForm.Designer.cs">
+      <DependentUpon>_9HayvanTanimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_11SiparisEkleDegistirForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_11SiparisEkleDegistirForm.designer.cs">
+      <DependentUpon>_11SiparisEkleDegistirForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_12FiyatSecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_12FiyatSecForm.Designer.cs">
+      <DependentUpon>_12FiyatSecForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_13TaksitliSatisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_13TaksitliSatisForm.Designer.cs">
+      <DependentUpon>_13TaksitliSatisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_21MusteriEkleDegistirForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_21MusteriEkleDegistirForm.designer.cs">
+      <DependentUpon>_21MusteriEkleDegistirForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_22MusteriGrupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_22MusteriGrupForm.Designer.cs">
+      <DependentUpon>_22MusteriGrupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_23EPostaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_23EPostaForm.Designer.cs">
+      <DependentUpon>_23EPostaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_24SmsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_24SmsForm.Designer.cs">
+      <DependentUpon>_24SmsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_25EsDurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_25EsDurum.Designer.cs">
+      <DependentUpon>_25EsDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_31UrunEkleDegistirForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_31UrunEkleDegistirForm.designer.cs">
+      <DependentUpon>_31UrunEkleDegistirForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_32UrunGrupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_32UrunGrupForm.Designer.cs">
+      <DependentUpon>_32UrunGrupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_33UrunStokForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_33UrunStokForm.designer.cs">
+      <DependentUpon>_33UrunStokForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_41KasaIslemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_41KasaIslemForm.designer.cs">
+      <DependentUpon>_41KasaIslemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_51CallerIdBaglantiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_51CallerIdBaglantiForm.designer.cs">
+      <DependentUpon>_51CallerIdBaglantiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_ArayaniBildirForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_ArayaniBildirForm1.Designer.cs">
+      <DependentUpon>_ArayaniBildirForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_ArayaniBildirForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_ArayaniBildirForm2.Designer.cs">
+      <DependentUpon>_ArayaniBildirForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_BildirimForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_BildirimForm1.Designer.cs">
+      <DependentUpon>_BildirimForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_BildirimForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_BildirimForm2.Designer.cs">
+      <DependentUpon>_BildirimForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_HakkimizdaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_HakkimizdaForm.Designer.cs">
+      <DependentUpon>_HakkimizdaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\_YuklemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\_YuklemeForm.Designer.cs">
+      <DependentUpon>_YuklemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisForm.designer.cs">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ProCustomerData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProCustomerData.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Doviz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Doviz.designer.cs">
+      <DependentUpon>Doviz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HastaModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HastaModul.Designer.cs">
+      <DependentUpon>HastaModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Iletisim\_1CagriModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Iletisim\_1CagriModul.Designer.cs">
+      <DependentUpon>_1CagriModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Iletisim\_2HatirlatmaModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Iletisim\_2HatirlatmaModul.Designer.cs">
+      <DependentUpon>_2HatirlatmaModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Iletisim\_3EpostaModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Iletisim\_3EpostaModul.Designer.cs">
+      <DependentUpon>_3EpostaModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Iletisim\_4SmsModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Iletisim\_4SmsModul.Designer.cs">
+      <DependentUpon>_4SmsModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\_1SiparisModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\_1SiparisModul.Designer.cs">
+      <DependentUpon>_1SiparisModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\_2CariModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\_2CariModul.designer.cs">
+      <DependentUpon>_2CariModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\_3UrunModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\_3UrunModul.designer.cs">
+      <DependentUpon>_3UrunModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\_4KasaModul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\_4KasaModul.designer.cs">
+      <DependentUpon>_4KasaModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SmsReferans\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Muayene.resx">
+      <DependentUpon>Muayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PhotoForm.resx">
+      <DependentUpon>PhotoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Randevu.resx">
+      <DependentUpon>Randevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RandevuListeForm.resx">
+      <DependentUpon>RandevuListeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RaporForm.resx">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_10HayvanTurTanim.resx">
+      <DependentUpon>_10HayvanTurTanim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_1KasaTanimForm.resx">
+      <DependentUpon>_1KasaTanimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_2PersonelListeForm.resx">
+      <DependentUpon>_2PersonelListeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_3BolgeListeForm.resx">
+      <DependentUpon>_3BolgeListeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_4OdemeTipiForm.resx">
+      <DependentUpon>_4OdemeTipiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_5SirketBilgiForm.resx">
+      <DependentUpon>_5SirketBilgiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_6KullaniciTanimForm.resx">
+      <DependentUpon>_6KullaniciTanimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_7ProgramAyarForm.resx">
+      <DependentUpon>_7ProgramAyarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_8ParaPuan.resx">
+      <DependentUpon>_8ParaPuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tanimlama\_9HayvanTanimForm.resx">
+      <DependentUpon>_9HayvanTanimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_11SiparisEkleDegistirForm.resx">
+      <DependentUpon>_11SiparisEkleDegistirForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_12FiyatSecForm.resx">
+      <DependentUpon>_12FiyatSecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_13TaksitliSatisForm.resx">
+      <DependentUpon>_13TaksitliSatisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_21MusteriEkleDegistirForm.resx">
+      <DependentUpon>_21MusteriEkleDegistirForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_22MusteriGrupForm.resx">
+      <DependentUpon>_22MusteriGrupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_23EPostaForm.resx">
+      <DependentUpon>_23EPostaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_24SmsForm.resx">
+      <DependentUpon>_24SmsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_25EsDurum.resx">
+      <DependentUpon>_25EsDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_31UrunEkleDegistirForm.resx">
+      <DependentUpon>_31UrunEkleDegistirForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_32UrunGrupForm.resx">
+      <DependentUpon>_32UrunGrupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_33UrunStokForm.resx">
+      <DependentUpon>_33UrunStokForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_41KasaIslemForm.resx">
+      <DependentUpon>_41KasaIslemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_51CallerIdBaglantiForm.resx">
+      <DependentUpon>_51CallerIdBaglantiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_ArayaniBildirForm1.resx">
+      <DependentUpon>_ArayaniBildirForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_ArayaniBildirForm2.resx">
+      <DependentUpon>_ArayaniBildirForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_BildirimForm1.resx">
+      <DependentUpon>_BildirimForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_BildirimForm2.resx">
+      <DependentUpon>_BildirimForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_HakkimizdaForm.resx">
+      <DependentUpon>_HakkimizdaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\_YuklemeForm.resx">
+      <DependentUpon>_YuklemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisForm.resx">
+      <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\Doviz.resx">
+      <DependentUpon>Doviz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HastaModul.resx">
+      <DependentUpon>HastaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Iletisim\_1CagriModul.resx">
+      <DependentUpon>_1CagriModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Iletisim\_2HatirlatmaModul.resx">
+      <DependentUpon>_2HatirlatmaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Iletisim\_3EpostaModul.resx">
+      <DependentUpon>_3EpostaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Iletisim\_4SmsModul.resx">
+      <DependentUpon>_4SmsModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\_1SiparisModul.resx">
+      <DependentUpon>_1SiparisModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\_2CariModul.resx">
+      <DependentUpon>_2CariModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\_3UrunModul.resx">
+      <DependentUpon>_3UrunModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\_4KasaModul.resx">
+      <DependentUpon>_4KasaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="ProCustomerData.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProCustomerData.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\SmsReferans\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SmsReferans\smsservice.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\CallerResim5.jpg" />
+    <None Include="Resources\CallerResim4.jpg" />
+    <None Include="Resources\CallerResim3.jpg" />
+    <None Include="Resources\CallerResim2.jpg" />
+    <None Include="Resources\CallerResim1.jpg" />
+    <None Include="Resources\zoom_out_2.png" />
+    <None Include="Resources\zoom_out.png" />
+    <None Include="Resources\zoom_in_2.png" />
+    <None Include="Resources\zoom_in.png" />
+    <None Include="Resources\yen_currency_sign_2.png" />
+    <None Include="Resources\yen_currency_sign.png" />
+    <None Include="Resources\world_2.png" />
+    <None Include="Resources\world.png" />
+    <None Include="Resources\wireless.png" />
+    <None Include="Resources\Windows Security.png" />
+    <None Include="Resources\wi_fi_2.png" />
+    <None Include="Resources\wi_fi.png" />
+    <None Include="Resources\webcam_2.png" />
+    <None Include="Resources\webcam.png" />
+    <None Include="Resources\Web File.png" />
+    <None Include="Resources\waste.png" />
+    <None Include="Resources\warning_2.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\volume_up_2.png" />
+    <None Include="Resources\volume_up.png" />
+    <None Include="Resources\volume_down_2.png" />
+    <None Include="Resources\volume_down.png" />
+    <None Include="Resources\View_32x32.png" />
+    <None Include="Resources\View_16x16.png" />
+    <None Include="Resources\video_player.png" />
+    <None Include="Resources\video_camera_2.png" />
+    <None Include="Resources\video_camera.png" />
+    <None Include="Resources\video.png" />
+    <None Include="Resources\Vector File.png" />
+    <None Include="Resources\users_2.png" />
+    <None Include="Resources\users.png" />
+    <None Include="Resources\user_comment.png" />
+    <None Include="Resources\user_2.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\USB Drive.png" />
+    <None Include="Resources\upload_page.png" />
+    <None Include="Resources\Upload_32x32.png" />
+    <None Include="Resources\Upload_16x16.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\up_arrow_2.png" />
+    <None Include="Resources\up_arrow.png" />
+    <None Include="Resources\UnmarkAll_32x32.png" />
+    <None Include="Resources\UnmarkAll_16x16.png" />
+    <None Include="Resources\Unmark_32x32.png" />
+    <None Include="Resources\Unmark_16x16.png" />
+    <None Include="Resources\unlocked_2.png" />
+    <None Include="Resources\unlocked.png" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\Undo_32x32.png" />
+    <None Include="Resources\Undo_16x16.png" />
+    <None Include="Resources\umbrella_2.png" />
+    <None Include="Resources\umbrella.png" />
+    <None Include="Resources\truck.png" />
+    <None Include="Resources\tools_2.png" />
+    <None Include="Resources\tools.png" />
+    <None Include="Resources\Tile.png" />
+    <None Include="Resources\thunders.png" />
+    <None Include="Resources\text_page.png" />
+    <None Include="Resources\tennis_ball.png" />
+    <None Include="Resources\television_2.png" />
+    <None Include="Resources\television.png" />
+    <None Include="Resources\target_2.png" />
+    <None Include="Resources\target.png" />
+    <None Include="Resources\tag_2.png" />
+    <None Include="Resources\tag.png" />
+    <None Include="Resources\support.png" />
+    <None Include="Resources\sun_clouds_thunder.png" />
+    <None Include="Resources\sun_clouds_rain.png" />
+    <None Include="Resources\sun_clouds.png" />
+    <None Include="Resources\sun.png" />
+    <None Include="Resources\stop_2.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\sterling_pound_currency_sign_2.png" />
+    <None Include="Resources\sterling_pound_currency_sign.png" />
+    <None Include="Resources\star_2.png" />
+    <None Include="Resources\star.png" />
+    <None Include="Resources\Stack.png" />
+    <None Include="Resources\Stack 3.png" />
+    <None Include="Resources\Stack 2.png" />
+    <None Include="Resources\speedometer_2.png" />
+    <None Include="Resources\speedometer.png" />
+    <None Include="Resources\Speaker.png" />
+    <None Include="Resources\snow.png" />
+    <None Include="Resources\snooker_ball.png" />
+    <None Include="Resources\smart_phone_2.png" />
+    <None Include="Resources\smart_phone.png" />
+    <None Include="Resources\Slideshow_32x32.png" />
+    <None Include="Resources\Slideshow_16x16.png" />
+    <None Include="Resources\skip_forward_2.png" />
+    <None Include="Resources\skip_forward.png" />
+    <None Include="Resources\skip_backward_2.png" />
+    <None Include="Resources\skip_backward.png" />
+    <None Include="Resources\shut_down_2.png" />
+    <None Include="Resources\shut_down.png" />
+    <None Include="Resources\shopping_cart_2.png" />
+    <None Include="Resources\shopping_cart.png" />
+    <None Include="Resources\settings_2.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\send_mail.png" />
+    <None Include="Resources\SelectAllMarked_32x32.png" />
+    <None Include="Resources\SelectAllMarked_16x16.png" />
+    <None Include="Resources\security_warning.png" />
+    <None Include="Resources\security_2.png" />
+    <None Include="Resources\security.png" />
+    <None Include="Resources\search_2.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\Search Images.png" />
+    <None Include="Resources\Search Hard Disk.png" />
+    <None Include="Resources\Search Folder.png" />
+    <None Include="Resources\Search Computer.png" />
+    <None Include="Resources\scissor_2.png" />
+    <None Include="Resources\scissor.png" />
+    <None Include="Resources\Save_32x32.png" />
+    <None Include="Resources\Save_16x16.png" />
+    <None Include="Resources\save_2.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\sale.png" />
+    <None Include="Resources\rugby_ball.png" />
+    <None Include="Resources\rss_2.png" />
+    <None Include="Resources\rss.png" />
+    <None Include="Resources\route.png" />
+    <None Include="Resources\right_arrow_2.png" />
+    <None Include="Resources\right_arrow.png" />
+    <None Include="Resources\rewind_2.png" />
+    <None Include="Resources\rewind.png" />
+    <None Include="Resources\reply_mail.png" />
+    <None Include="Resources\repeat_2.png" />
+    <None Include="Resources\repeat.png" />
+    <None Include="Resources\RemoveFromAlbum_32x32.png" />
+    <None Include="Resources\RemoveFromAlbum_16x16.png" />
+    <None Include="Resources\RemoveFolder_32x32.png" />
+    <None Include="Resources\RemoveFolder_16x16.png" />
+    <None Include="Resources\RemoveAlbum_32x32.png" />
+    <None Include="Resources\RemoveAlbum_16x16.png" />
+    <None Include="Resources\Remove_32x32.png" />
+    <None Include="Resources\Remove_16x16.png" />
+    <None Include="Resources\refresh_page.png" />
+    <None Include="Resources\refresh_2.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\Recycle Bin Full.png" />
+    <None Include="Resources\Recycle Bin Empty.png" />
+    <None Include="Resources\record_2.png" />
+    <None Include="Resources\record.png" />
+    <None Include="Resources\rain_thunders.png" />
+    <None Include="Resources\rain.png" />
+    <None Include="Resources\radio.png" />
+    <None Include="Resources\quote_2.png" />
+    <None Include="Resources\quote.png" />
+    <None Include="Resources\question_mark.png" />
+    <None Include="Resources\puzzle_2.png" />
+    <None Include="Resources\puzzle.png" />
+    <None Include="Resources\Public.png" />
+    <None Include="Resources\protection.png" />
+    <None Include="Resources\promotion.png" />
+    <None Include="Resources\progress.png" />
+    <None Include="Resources\process_2.png" />
+    <None Include="Resources\process.png" />
+    <None Include="Resources\prize_winner.png" />
+    <None Include="Resources\Private.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\Print_32x32.png" />
+    <None Include="Resources\Print_16x16.png" />
+    <None Include="Resources\print_2.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\PNG File.png" />
+    <None Include="Resources\plus_2.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\plus.ico" />
+    <None Include="Resources\play_2.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\ping_pong.png" />
+    <None Include="Resources\Photoshop File.png" />
+    <None Include="Resources\photo_camera_2.png" />
+    <None Include="Resources\photo_camera.png" />
+    <None Include="Resources\photo_2.png" />
+    <None Include="Resources\photo.png" />
+    <None Include="Resources\phone_book.png" />
+    <None Include="Resources\phone_2.png" />
+    <None Include="Resources\phone.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\pause_2.png" />
+    <None Include="Resources\Pause.png" />
+    <None Include="Resources\palette_2.png" />
+    <None Include="Resources\palette.png" />
+    <None Include="Resources\paint_brush_2.png" />
+    <None Include="Resources\paint_brush.png" />
+    <None Include="Resources\pages_2.png" />
+    <None Include="Resources\pages.png" />
+    <None Include="Resources\page_warning.png" />
+    <None Include="Resources\page_settings.png" />
+    <None Include="Resources\page_full.png" />
+    <None Include="Resources\page_2.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\package.png" />
+    <None Include="Resources\Other_32x32.png" />
+    <None Include="Resources\Other_16x16.png" />
+    <None Include="Resources\old_telephone_2.png" />
+    <None Include="Resources\old_telephone.png" />
+    <None Include="Resources\notification.png" />
+    <None Include="Resources\notes_warning.png" />
+    <None Include="Resources\notes.png" />
+    <None Include="Resources\not_available.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\newsletter.png" />
+    <None Include="Resources\NewAlbum_32x32.png" />
+    <None Include="Resources\NewAlbum_16x16.png" />
+    <None Include="Resources\new_mail_2.png" />
+    <None Include="Resources\new_mail.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\network_2.png" />
+    <None Include="Resources\network.png" />
+    <None Include="Resources\music_note_2.png" />
+    <None Include="Resources\music_note.png" />
+    <None Include="Resources\mp3_player_2.png" />
+    <None Include="Resources\mp3_player.png" />
+    <None Include="Resources\MP3 Player.png" />
+    <None Include="Resources\Mouse.png" />
+    <None Include="Resources\monitor_2.png" />
+    <None Include="Resources\monitor.png" />
+    <None Include="Resources\minus_2.png" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\microphone_2.png" />
+    <None Include="Resources\microphone.png" />
+    <None Include="Resources\megaphone.png" />
+    <None Include="Resources\Mark_32x32.png" />
+    <None Include="Resources\Mark_16x16.png" />
+    <None Include="Resources\map_pin_2.png" />
+    <None Include="Resources\map_pin.png" />
+    <None Include="Resources\mail_2.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\magnet.png" />
+    <None Include="Resources\magic_wand_2.png" />
+    <None Include="Resources\magic_wand.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\locked_2.png" />
+    <None Include="Resources\locked.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\link_2.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\like_2.png" />
+    <None Include="Resources\like.png" />
+    <None Include="Resources\lightbulb.png" />
+    <None Include="Resources\light_bulb_2.png" />
+    <None Include="Resources\light_bulb.png" />
+    <None Include="Resources\Library_32x32.png" />
+    <None Include="Resources\Library_16x16.png" />
+    <None Include="Resources\levels.png" />
+    <None Include="Resources\left_arrow_2.png" />
+    <None Include="Resources\left_arrow.png" />
+    <None Include="Resources\laboratory.png" />
+    <None Include="Resources\key_2.png" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\JPEG File.png" />
+    <None Include="Resources\ItemMarked_32x32.png" />
+    <None Include="Resources\ItemMarked_16x16.png" />
+    <None Include="Resources\iPod Nano 2G.png" />
+    <None Include="Resources\iPod Nano 2G Alt.png" />
+    <None Include="Resources\iPod 5G.png" />
+    <None Include="Resources\iPod 5G Alt.png" />
+    <None Include="Resources\iPod 4G.png" />
+    <None Include="Resources\iPod 4G Alt.png" />
+    <None Include="Resources\Information.png" />
+    <None Include="Resources\info_2.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\Images.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\Illustrator File.png" />
+    <None Include="Resources\id_card_2.png" />
+    <None Include="Resources\id_card.png" />
+    <None Include="Resources\hospital.png" />
+    <None Include="Resources\home_2.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\history.png" />
+    <None Include="Resources\Help_32x32.png" />
+    <None Include="Resources\Help_16x16.png" />
+    <None Include="Resources\help_2.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\Help and Support.png" />
+    <None Include="Resources\heart_2.png" />
+    <None Include="Resources\heart.png" />
+    <None Include="Resources\headphones_2.png" />
+    <None Include="Resources\headphones.png" />
+    <None Include="Resources\Hard Disk.png" />
+    <None Include="Resources\handicap.png" />
+    <None Include="Resources\GIF File.png" />
+    <None Include="Resources\GenerateData_32x32.png" />
+    <None Include="Resources\GenerateData_16x16.png" />
+    <None Include="Resources\gears.png" />
+    <None Include="Resources\games_2.png" />
+    <None Include="Resources\games.png" />
+    <None Include="Resources\Forward_32x32.png" />
+    <None Include="Resources\Forward_16x16.png" />
+    <None Include="Resources\football.png" />
+    <None Include="Resources\Font File.png" />
+    <None Include="Resources\Font File Alt.png" />
+    <None Include="Resources\Folder_32x32.png" />
+    <None Include="Resources\Folder_16x16.png" />
+    <None Include="Resources\folder_2.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\flag.png" />
+    <None Include="Resources\first_aid.png" />
+    <None Include="Resources\Firewire Drive.png" />
+    <None Include="Resources\FilterSample.png" />
+    <None Include="Resources\Filter_32x32.png" />
+    <None Include="Resources\Filter_16x16.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\Film_32x32.png" />
+    <None Include="Resources\Film_16x16.png" />
+    <None Include="Resources\film_2.png" />
+    <None Include="Resources\film.png" />
+    <None Include="Resources\File.png" />
+    <None Include="Resources\favourite_video.png" />
+    <None Include="Resources\favourite_place.png" />
+    <None Include="Resources\favorite.png" />
+    <None Include="Resources\fast_forward_2.png" />
+    <None Include="Resources\fast_forward.png" />
+    <None Include="Resources\Export_32x32.png" />
+    <None Include="Resources\Export_16x16.png" />
+    <None Include="Resources\exclamination_mark.png" />
+    <None Include="Resources\Excel-icon.png" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\euro_currency_sign_2.png" />
+    <None Include="Resources\euro_currency_sign.png" />
+    <None Include="Resources\Error.png" />
+    <None Include="Resources\EMail_32x32.png" />
+    <None Include="Resources\EMail_16x16.png" />
+    <None Include="Resources\email_2.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\eject_2.png" />
+    <None Include="Resources\eject.png" />
+    <None Include="Resources\edit_user.png" />
+    <None Include="Resources\edit_page.png" />
+    <None Include="Resources\edit_notes.png" />
+    <None Include="Resources\edit_mail.png" />
+    <None Include="Resources\Edit_32x32.png" />
+    <None Include="Resources\Edit_16x16.png" />
+    <None Include="Resources\edit_2.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\download_page.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\down_arrow_2.png" />
+    <None Include="Resources\down_arrow.png" />
+    <None Include="Resources\dollar_currency_sign_2.png" />
+    <None Include="Resources\dollar_currency_sign.png" />
+    <None Include="Resources\dislike_2.png" />
+    <None Include="Resources\dislike.png" />
+    <None Include="Resources\directions.png" />
+    <None Include="Resources\Developer.png" />
+    <None Include="Resources\delete_user.png" />
+    <None Include="Resources\delete_page.png" />
+    <None Include="Resources\delete_notes.png" />
+    <None Include="Resources\delete_mail.png" />
+    <None Include="Resources\delete_comment.png" />
+    <None Include="Resources\delete_2.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\database_2.png" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\credit_card.png" />
+    <None Include="Resources\computer_mouse_2.png" />
+    <None Include="Resources\computer_mouse.png" />
+    <None Include="Resources\Computer.png" />
+    <None Include="Resources\comments_2.png" />
+    <None Include="Resources\comments.png" />
+    <None Include="Resources\comment_2.png" />
+    <None Include="Resources\comment.png" />
+    <None Include="Resources\Collage_32x32.png" />
+    <None Include="Resources\Collage_16x16.png" />
+    <None Include="Resources\coffee_2.png" />
+    <None Include="Resources\coffee.png" />
+    <None Include="Resources\clouds.png" />
+    <None Include="Resources\cloud_upload_2.png" />
+    <None Include="Resources\cloud_upload.png" />
+    <None Include="Resources\cloud_download_2.png" />
+    <None Include="Resources\cloud_download.png" />
+    <None Include="Resources\cloud_comment.png" />
+    <None Include="Resources\cloud_2.png" />
+    <None Include="Resources\cloud.png" />
+    <None Include="Resources\Close_32x32.png" />
+    <None Include="Resources\Close_16x16.png" />
+    <None Include="Resources\clock_2.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\chess_2.png" />
+    <None Include="Resources\chess.png" />
+    <None Include="Resources\checkmark_2.png" />
+    <None Include="Resources\checkmark.png" />
+    <None Include="Resources\checked.png" />
+    <None Include="Resources\check_mark.png" />
+    <None Include="Resources\Chat.png" />
+    <None Include="Resources\chart_pie_2.png" />
+    <None Include="Resources\chart_pie.png" />
+    <None Include="Resources\chart_2.png" />
+    <None Include="Resources\chart.png" />
+    <None Include="Resources\chalk_board.png" />
+    <None Include="Resources\CD Player.png" />
+    <None Include="Resources\card_game_icon.png" />
+    <None Include="Resources\Cancel_32x32.png" />
+    <None Include="Resources\Cancel_16x16.png" />
+    <None Include="Resources\camcorder.png" />
+    <None Include="Resources\calendar_date_2.png" />
+    <None Include="Resources\calendar_date.png" />
+    <None Include="Resources\calendar_2.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\calculator_2.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\business_user.png" />
+    <None Include="Resources\Burn.png" />
+    <None Include="Resources\briefcase_2.png" />
+    <None Include="Resources\briefcase.png" />
+    <None Include="Resources\book_2.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\BMP File.png" />
+    <None Include="Resources\bluetooth.png" />
+    <None Include="Resources\block_2.png" />
+    <None Include="Resources\block.png" />
+    <None Include="Resources\blank_page_2.png" />
+    <None Include="Resources\blank_page.png" />
+    <None Include="Resources\bin_2.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\battery_low.png" />
+    <None Include="Resources\battery_full_2.png" />
+    <None Include="Resources\battery_full.png" />
+    <None Include="Resources\battery_empty_2.png" />
+    <None Include="Resources\battery_empty.png" />
+    <None Include="Resources\battery_charge.png" />
+    <None Include="Resources\battery_2.png" />
+    <None Include="Resources\battery.png" />
+    <None Include="Resources\basketball.png" />
+    <None Include="Resources\baseball.png" />
+    <None Include="Resources\barcode.png" />
+    <None Include="Resources\bar_chart_2.png" />
+    <None Include="Resources\bar_chart.png" />
+    <None Include="Resources\Back_32x32.png" />
+    <None Include="Resources\Back_16x16.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\attachment_2.png" />
+    <None Include="Resources\attachment.png" />
+    <None Include="Resources\attach_document.png" />
+    <None Include="Resources\atolyalogo.png" />
+    <None Include="Resources\Arrow Up.png" />
+    <None Include="Resources\Arrow Right.png" />
+    <None Include="Resources\Arrow Left.png" />
+    <None Include="Resources\Arrow Down.png" />
+    <None Include="Resources\approve_user.png" />
+    <None Include="Resources\approve_page.png" />
+    <None Include="Resources\approve_notes.png" />
+    <None Include="Resources\approve_mail.png" />
+    <None Include="Resources\approve_comment.png" />
+    <None Include="Resources\apple.png" />
+    <None Include="Resources\Album_32x32.png" />
+    <None Include="Resources\Album_16x16.png" />
+    <None Include="Resources\airplane.png" />
+    <None Include="Resources\Adobe Reader File.png" />
+    <None Include="Resources\AddToLibrary_32x32.png" />
+    <None Include="Resources\AddToLibrary_16x16.png" />
+    <None Include="Resources\AddToAlbum_32x32.png" />
+    <None Include="Resources\AddToAlbum_16x16.png" />
+    <None Include="Resources\address_book_2.png" />
+    <None Include="Resources\address_book.png" />
+    <None Include="Resources\AddFolder_32x32.png" />
+    <None Include="Resources\AddFolder_16x16.png" />
+    <None Include="Resources\AddFile_32x32.png" />
+    <None Include="Resources\AddFile_16x16.png" />
+    <None Include="Resources\add_user.png" />
+    <None Include="Resources\add_to_favorite.png" />
+    <None Include="Resources\add_page.png" />
+    <None Include="Resources\add_notes.png" />
+    <None Include="Resources\add_mail.png" />
+    <None Include="Resources\add_comment.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\aa %28115%29.png" />
+    <None Include="Resources\aa %28114%29.png" />
+    <None Include="Resources\aa %28113%29.png" />
+    <None Include="Resources\aa %28112%29.png" />
+    <None Include="Resources\aa %28111%29.png" />
+    <None Include="Resources\aa %28110%29.png" />
+    <None Include="Resources\aa %28109%29.png" />
+    <None Include="Resources\aa %28108%29.png" />
+    <None Include="Resources\aa %28107%29.png" />
+    <None Include="Resources\aa %28106%29.png" />
+    <None Include="Resources\aa %28105%29.png" />
+    <None Include="Resources\aa %28104%29.png" />
+    <None Include="Resources\aa %28103%29.png" />
+    <None Include="Resources\aa %28102%29.png" />
+    <None Include="Resources\aa %28101%29.png" />
+    <None Include="Resources\aa %28100%29.png" />
+    <None Include="Resources\aa %2899%29.png" />
+    <None Include="Resources\aa %2898%29.png" />
+    <None Include="Resources\aa %2897%29.png" />
+    <None Include="Resources\aa %2896%29.png" />
+    <None Include="Resources\aa %2895%29.png" />
+    <None Include="Resources\aa %2894%29.png" />
+    <None Include="Resources\aa %2893%29.png" />
+    <None Include="Resources\aa %2892%29.png" />
+    <None Include="Resources\aa %2891%29.png" />
+    <None Include="Resources\aa %2890%29.png" />
+    <None Include="Resources\aa %2889%29.png" />
+    <None Include="Resources\aa %2888%29.png" />
+    <None Include="Resources\aa %2887%29.png" />
+    <None Include="Resources\aa %2886%29.png" />
+    <None Include="Resources\aa %2885%29.png" />
+    <None Include="Resources\aa %2884%29.png" />
+    <None Include="Resources\aa %2883%29.png" />
+    <None Include="Resources\aa %2882%29.png" />
+    <None Include="Resources\aa %2881%29.png" />
+    <None Include="Resources\aa %2880%29.png" />
+    <None Include="Resources\aa %2879%29.png" />
+    <None Include="Resources\aa %2878%29.png" />
+    <None Include="Resources\aa %2877%29.png" />
+    <None Include="Resources\aa %2876%29.png" />
+    <None Include="Resources\aa %2875%29.png" />
+    <None Include="Resources\aa %2874%29.png" />
+    <None Include="Resources\aa %2873%29.png" />
+    <None Include="Resources\aa %2872%29.png" />
+    <None Include="Resources\aa %2871%29.png" />
+    <None Include="Resources\aa %2870%29.png" />
+    <None Include="Resources\aa %2869%29.png" />
+    <None Include="Resources\aa %2868%29.png" />
+    <None Include="Resources\aa %2867%29.png" />
+    <None Include="Resources\aa %2866%29.png" />
+    <None Include="Resources\aa %2865%29.png" />
+    <None Include="Resources\aa %2864%29.png" />
+    <None Include="Resources\aa %2863%29.png" />
+    <None Include="Resources\aa %2862%29.png" />
+    <None Include="Resources\aa %2861%29.png" />
+    <None Include="Resources\aa %2860%29.png" />
+    <None Include="Resources\aa %2859%29.png" />
+    <None Include="Resources\aa %2858%29.png" />
+    <None Include="Resources\aa %2857%29.png" />
+    <None Include="Resources\aa %2856%29.png" />
+    <None Include="Resources\aa %2855%29.png" />
+    <None Include="Resources\aa %2854%29.png" />
+    <None Include="Resources\aa %2853%29.png" />
+    <None Include="Resources\aa %2852%29.png" />
+    <None Include="Resources\aa %2851%29.png" />
+    <None Include="Resources\aa %2850%29.png" />
+    <None Include="Resources\aa %2849%29.png" />
+    <None Include="Resources\aa %2848%29.png" />
+    <None Include="Resources\aa %2847%29.png" />
+    <None Include="Resources\aa %2846%29.png" />
+    <None Include="Resources\aa %2845%29.png" />
+    <None Include="Resources\aa %2844%29.png" />
+    <None Include="Resources\aa %2843%29.png" />
+    <None Include="Resources\aa %2842%29.png" />
+    <None Include="Resources\aa %2841%29.png" />
+    <None Include="Resources\aa %2840%29.png" />
+    <None Include="Resources\aa %2839%29.png" />
+    <None Include="Resources\aa %2838%29.png" />
+    <None Include="Resources\aa %2837%29.png" />
+    <None Include="Resources\aa %2836%29.png" />
+    <None Include="Resources\aa %2835%29.png" />
+    <None Include="Resources\aa %2834%29.png" />
+    <None Include="Resources\aa %2833%29.png" />
+    <None Include="Resources\aa %2832%29.png" />
+    <None Include="Resources\aa %2831%29.png" />
+    <None Include="Resources\aa %2830%29.png" />
+    <None Include="Resources\aa %2829%29.png" />
+    <None Include="Resources\aa %2828%29.png" />
+    <None Include="Resources\aa %2827%29.png" />
+    <None Include="Resources\aa %2826%29.png" />
+    <None Include="Resources\aa %2825%29.png" />
+    <None Include="Resources\aa %2824%29.png" />
+    <None Include="Resources\aa %2823%29.png" />
+    <None Include="Resources\aa %2822%29.png" />
+    <None Include="Resources\aa %2821%29.png" />
+    <None Include="Resources\aa %2820%29.png" />
+    <None Include="Resources\aa %2819%29.png" />
+    <None Include="Resources\aa %2818%29.png" />
+    <None Include="Resources\aa %2817%29.png" />
+    <None Include="Resources\aa %2816%29.png" />
+    <None Include="Resources\aa %2815%29.png" />
+    <None Include="Resources\aa %2814%29.png" />
+    <None Include="Resources\aa %2813%29.png" />
+    <None Include="Resources\aa %2812%29.png" />
+    <None Include="Resources\aa %2811%29.png" />
+    <None Include="Resources\aa %2810%29.png" />
+    <None Include="Resources\aa %289%29.png" />
+    <None Include="Resources\aa %288%29.png" />
+    <None Include="Resources\aa %287%29.png" />
+    <None Include="Resources\aa %286%29.png" />
+    <None Include="Resources\aa %285%29.png" />
+    <None Include="Resources\aa %284%29.png" />
+    <None Include="Resources\aa %283%29.png" />
+    <None Include="Resources\aa %282%29.png" />
+    <None Include="Resources\aa %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.postaguvercini.com/api_ws/smsservice.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SmsReferans\</RelPath>
+      <UpdateFromURL>http://www.postaguvercini.com/api_ws/smsservice.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ProCustomer_SmsReferans_smsservice</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Axcidv5callerid">
+      <Guid>{ABD767AA-AF41-4B9C-909B-160B2AF85190}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="cidv5callerid">
+      <Guid>{ABD767AA-AF41-4B9C-909B-160B2AF85190}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

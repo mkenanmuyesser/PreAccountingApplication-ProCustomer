@@ -1,0 +1,5 @@
+Önce Form1 i sonra Form2 yi açýn.
+
+Caller ID nesnesi sadece 1 tane form üzerine yerleþtirilmelidir. 
+Bu form sürekli açýk kalan bir form olmalýdýr.
+
