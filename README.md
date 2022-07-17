@@ -10,4 +10,4 @@ Used technologies : C#, Winforms, LinqtoSql, Devexpress components, MS Sql Serve
 
 Minran Kenan MÜYESSER
 mkenanmuyesser@hotmail.com
-https://www.linkedin.com/in/minran-kenan-müyesser
+https://www.linkedin.com/in/mkenanmuyesser
